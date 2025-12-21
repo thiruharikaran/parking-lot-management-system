@@ -4,12 +4,27 @@ import { useNavigate } from 'react-router-dom';
 import api from '../services/api';
 import Layout from '../components/Layout';
 
+const IS_DEMO = process.env.REACT_APP_DEMO === 'true';
+
 export default function Login() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
 
   const handleLogin = async () => {
+
+    // 🔧 DEMO LOGIN (Netlify only)
+    if (IS_DEMO) {
+      if (username === 'admin' && password === 'admin') {
+        localStorage.setItem('token', 'demo-token');
+        navigate('/dashboard');
+      } else {
+        alert('Demo credentials: admin / admin');
+      }
+      return;
+    }
+
+    // ✅ REAL LOGIN (Backend + MySQL)
     try {
       const res = await api.post('/auth/login', {
         username,
