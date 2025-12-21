@@ -6,6 +6,21 @@ Built using **React.js**, **Node.js**, **Express**, and **MySQL** with **JWT aut
 
 ---
 
+## 🌍 Live Demo
+
+🔗 Frontend Demo (Netlify):  
+https://parking-lot-management-demo.netlify.app/
+
+🧪 Demo Credentials:
+- Username: admin
+- Password: admin
+
+⚠️ Note:  
+This is a frontend-only demo version.  
+Backend (Node.js + MySQL) runs locally.
+
+---
+
 ## 🔥 Features
 
 - 🔐 Secure login using JWT authentication
