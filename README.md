@@ -73,11 +73,67 @@ parking-lot-management-system/
 
 ---
 
+## 🗄 Database Overview
+
+- **users** – stores admin login credentials and roles
+- **parking_slots** – manages parking slot availability (total slots = 50)
+- **parking_records** – stores vehicle entry and exit history with timestamps
+
+---
 
 ## ⚙️ Setup Instructions
 
 ### 1️⃣ Clone Repository
+
 ```bash
 git clone https://github.com/thiruharikaran/parking-lot-management-system.git
 cd parking-lot-management-system
+```
+---
 
+### 2️⃣ Backend Setup
+
+```bash
+cd backend
+npm install
+node server.js
+```
+
+Backend runs at:
+
+http://localhost:5000
+
+---
+
+### 3️⃣ Frontend Setup
+
+```bash
+cd frontend
+npm install
+npm start
+```
+
+Frontend runs at:
+
+http://localhost:3000
+
+---
+
+---
+
+## 🚀 Future Enhancements
+
+- Multiple user roles (Security / Admin)
+- Parking slot visualization grid
+- Parking fee calculation
+- Backend deployment using cloud services
+
+---
+
+## 👨‍💻 Author
+
+**Thiruharikaran R**  
+B.Tech Information Technology  
+SRM Easwari Engineering College  
+
+GitHub: https://github.com/thiruharikaran
