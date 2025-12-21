@@ -39,25 +39,25 @@ Built using **React.js**, **Node.js**, **Express**, and **MySQL** with **JWT aut
 
 ## 📂 Project Structure
 
-parking-lot-management-system/
-│
-├── backend/
-│ ├── routes/
-│ ├── middleware/
-│ ├── db.js
-│ └── server.js
-│
-├── frontend/
-│ ├── src/
-│ ├── public/
-│
-├── screenshots/
-│ ├── login.png
-│ ├── dashboard.png
-│ └── history.png
-│
-└── README.md
-
+parking-lot-management-system/  
+│                             
+├── backend/                  
+│ ├── routes/                 
+│ ├── middleware/             
+│ ├── db.js                   
+│ └── server.js               
+│                             
+├── frontend/                 
+│ ├── src/                    
+│ ├── public/                 
+│                             
+├── screenshots/              
+│ ├── login.png               
+│ ├── dashboard.png           
+│ └── history.png             
+│                             
+└── README.md                 
+                              
 ---
 
 ## ⚙️ Setup Instructions
