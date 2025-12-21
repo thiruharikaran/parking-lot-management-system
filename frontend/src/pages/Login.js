@@ -12,31 +12,31 @@ export default function Login() {
   const navigate = useNavigate();
 
   const handleLogin = async () => {
-
-    // 🔧 DEMO LOGIN (Netlify only)
-    if (IS_DEMO) {
-      if (username === 'admin' && password === 'admin') {
-        localStorage.setItem('token', 'demo-token');
-        navigate('/dashboard');
-      } else {
-        alert('Demo credentials: admin / admin');
-      }
-      return;
-    }
-
-    // ✅ REAL LOGIN (Backend + MySQL)
-    try {
-      const res = await api.post('/auth/login', {
-        username,
-        password
-      });
-
-      localStorage.setItem('token', res.data.token);
+  // 🔧 DEMO LOGIN (Netlify only)
+  if (IS_DEMO) {
+    if (username === 'admin' && password === 'admin123') {
+      localStorage.setItem('token', 'demo-token');
       navigate('/dashboard');
-    } catch (err) {
-      alert('Invalid username or password');
+    } else {
+      alert('Demo credentials: admin / admin123');
     }
-  };
+    return;
+  }
+
+  // ✅ REAL LOGIN (Localhost + Backend + MySQL)
+  try {
+    const res = await api.post('/auth/login', {
+      username,
+      password,
+    });
+
+    localStorage.setItem('token', res.data.token);
+    navigate('/dashboard');
+  } catch (err) {
+    alert('Invalid username or password');
+  }
+};
+
 
   return (
     <Layout showNavbar={false}>
