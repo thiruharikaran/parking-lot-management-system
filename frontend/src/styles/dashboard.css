@@ -1,0 +1,44 @@
+.dashboard-bg {
+  min-height: 100vh;
+  background: linear-gradient(
+    135deg,
+    #f5f7fa 0%,
+    #ffffff 100%
+  );
+}
+/* Full dashboard background */
+.dashboard-bg {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Header section */
+.dashboard-header {
+  text-align: center;
+  color: #fff;
+  padding: 60px 20px;
+}
+
+/* Glass-style cards */
+.dashboard-card {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(10px);
+  border-radius: 14px;
+  color: white;
+  padding: 20px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: 1px solid rgba(255,255,255,0.15);
+}
+
+/* Hover effect */
+.dashboard-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+}
+
+/* Small description text */
+.dashboard-card p {
+  opacity: 0.85;
+}
