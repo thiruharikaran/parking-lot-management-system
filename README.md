@@ -60,6 +60,20 @@ parking-lot-management-system/
                               
 ---
 
+## 📸 Screenshots
+
+### 🔐 Login Page
+![Login Page](screenshots/login.png)
+
+### 📊 Dashboard
+![Dashboard](screenshots/dashboard.png)
+
+### 📜 Parking History
+![Parking History](screenshots/history.png)
+
+---
+
+
 ## ⚙️ Setup Instructions
 
 ### 1️⃣ Clone Repository
