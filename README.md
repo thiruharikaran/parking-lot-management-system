@@ -13,7 +13,7 @@ https://parking-lot-management-demo.netlify.app/
 
 🧪 Demo Credentials:
 - Username: admin
-- Password: admin
+- Password: admin123
 
 ⚠️ Note:  
 This is a frontend-only demo version.  
