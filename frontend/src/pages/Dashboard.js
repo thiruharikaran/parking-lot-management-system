@@ -13,7 +13,36 @@ export default function Dashboard() {
     recordsToday: 0
   });
 
-  useEffect(() => {
+useEffect(() => {
+  api.get('/parking/stats')
+    .then(res => {
+      // ✅ REAL DATA (used when backend is running)
+      setStats({
+        availableSlots: res.data.availableSlots,
+        occupiedSlots: res.data.occupiedSlots,
+        recordsToday: res.data.recordsToday
+      });
+    })
+    .catch(() => {
+      /*
+        🔧 DEMO MODE (Frontend-only deployment)
+
+        This fallback is used ONLY when backend is unavailable
+        (e.g., Netlify live demo).
+
+        Real backend + MySQL work locally without this.
+      */
+
+      setStats({
+        availableSlots: 30,
+        occupiedSlots: 20,
+        recordsToday: 18
+      });
+    });
+}, []);
+
+
+  /*useEffect(() => {
     api.get('/parking/stats')
       .then(res => {
         setStats({
@@ -23,7 +52,7 @@ export default function Dashboard() {
         });
       })
       .catch(err => console.error(err));
-  }, []);
+  }, []);*/
 
   return (
     <Layout>
