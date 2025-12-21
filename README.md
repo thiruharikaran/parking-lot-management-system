@@ -45,7 +45,7 @@ parking-lot-management-system/
 │ ├── routes/
 │ ├── middleware/
 │ ├── db.js
-│ ├── server.js
+│ └── server.js
 │
 ├── frontend/
 │ ├── src/
@@ -54,7 +54,7 @@ parking-lot-management-system/
 ├── screenshots/
 │ ├── login.png
 │ ├── dashboard.png
-│ ├── history.png
+│ └── history.png
 │
 └── README.md
 
