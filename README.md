@@ -16,8 +16,11 @@ https://parking-lot-management-demo.netlify.app/
 - Password: admin123
 
 ⚠️ Note:  
-This is a frontend-only demo version.  
-Backend (Node.js + MySQL) runs locally.
+This live deployment demonstrates the frontend UI and user experience.
+
+The backend API and MySQL database are not deployed, so dashboard data and parking records are unavailable in the online demo.
+
+To experience the complete application, clone the repository and run both the frontend and backend locally using the setup instructions below.
 
 ---
 
