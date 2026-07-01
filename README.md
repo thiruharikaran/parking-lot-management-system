@@ -16,6 +16,7 @@ https://parking-lot-management-demo.netlify.app/
 - Password: admin123
 
 ⚠️ Note:  
+
 This live deployment demonstrates the frontend UI and user experience.
 
 The backend API and MySQL database are not deployed, so dashboard data and parking records are unavailable in the online demo.
